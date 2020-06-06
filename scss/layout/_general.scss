@@ -1,0 +1,51 @@
+@font-face {
+	font-family: Gotham-bold;
+	font-size: bold;
+	src: url('../css/fonts/gothambold.woff');
+}
+
+@font-face {
+	font-family: Gotham-normal;
+	font-size: normal;
+	src: url('../css/fonts/gothammedium.woff');
+}
+
+@font-face {
+	font-family: Gotham-book;
+	font-size: small;
+	src: url('../css/fonts/gothambook.woff');
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	outline: none;
+	box-sizing: border-box;
+}
+
+.section-title {
+	margin-top: 140px;
+	text-transform: uppercase;
+	font-family: Gotham-bold;
+	font-size: 44px;
+	color: #2c4058;
+}
+
+.main-button {
+  	font-family: Gotham-book;
+  	font-size: 14px;
+  	font-weight: normal;
+  	font-stretch: normal;
+  	font-style: normal;
+  	letter-spacing: normal;
+  	text-align: center;
+  	color: #2c4058;
+  	font-size: 14px;
+	border: 1px solid #2c4058;
+	background-color: #fff;
+	max-width: 190px;
+	padding: 30px 10px 20px;
+	text-transform: uppercase;
+}
+

@@ -1,0 +1,93 @@
+.projects {
+    width: 100%;
+    height: 1600px;
+    overflow: hidden;
+
+    &__project {
+        display: flex;
+        flex-direction: row;
+        margin: 150px 0 40px;
+    }
+
+    &__small-text {
+        font-family: Gotham-book;
+        font-size: 22px;
+    }
+
+    &__title {
+        font-family: Gotham-bold;
+        font-size: 44px;
+        text-align: left;
+        color: #2c4058;
+        text-transform: uppercase;
+    }
+
+    &__geotag {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 18px;
+        font-weight: normal;
+        font-style: italic;
+        text-align: left;
+        color: #2c4058;
+
+        &::before {
+            content: '?? ';
+        }
+    }
+
+    &__wrapper {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__image {
+        width: 630px;
+        height: 470px;
+        position: relative;
+    }
+
+    &__image--1 {
+        background: url('../images/Frame.png') no-repeat center center;
+    }
+
+    &__image--2 {
+        background: url('../images/Frame2.png') no-repeat center center;
+    }
+
+    &__image-color {
+        position: absolute;
+        width: 1000px;
+        height: 470px;
+        background-color: #55b7ff;
+        z-index: -99;
+        top: -70px;
+        left: -620px;
+    }
+
+    &__image-color--blue {
+        background-color: #55b7ff;
+        left: -620px;
+    }
+
+    &__image-color--violet {
+        background-color: #7e5aff;
+        left: 260px;
+    }
+
+    &__main-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    &__short-description {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 18px;
+        font-weight: normal;
+        font-style: normal;
+        text-align: left;
+        color: #4b5562;
+    }
+}
