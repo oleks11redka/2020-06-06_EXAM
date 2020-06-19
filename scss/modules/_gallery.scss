@@ -1,0 +1,28 @@
+.gallery {
+    width: 100%;
+    height: 900px;
+    background-color: white;
+
+    &__small-photo {
+        margin-bottom: 7px;
+        margin-left: 5px;
+    }
+
+    &__see-more-button {
+        margin-top: 80px;
+        padding: 30px 40px 20px;
+    }
+
+    &__wrapper {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__photos-block {
+        margin-top: 100px;
+    }
+}

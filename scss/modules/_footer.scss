@@ -1,0 +1,137 @@
+.footer {
+    width: 100%;
+    height: 400px;
+    background: url('../images/footer-back.png') no-repeat center bottom, linear-gradient(to top, #55b7ff, #7e5aff);
+    background-size: cover;
+    position: relative;
+
+    &__header {
+        margin-top: 100px;
+    }
+
+    &__wrapper {
+        width: 100%;
+    }
+
+    &__info {
+        top: -280px;
+        left: calc(50% - 385px);
+        position: absolute;
+        width: 770px;
+        height: 430px;
+        box-shadow: 0px -4px 30px 0 rgba(133, 133, 133, 0.2);
+        background-color: #ffffff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__form-and-contact-info {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 100%;
+    }
+
+    &__main-info {
+        width: 385px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding: 20px 60px;
+        color: $navy;
+        font-family: Gotham-book;
+    }
+
+    &__form {
+        width: 385px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding: 20px 60px;
+    }
+
+    &__form-fields {
+        font-family: Gotham-normal;
+        font-size: 18px;
+        border-bottom: 2px solid $navy;
+        opacity: .7;
+        padding: 0 0 20px;
+        transition: .3s;
+        color: $navy;
+
+        &:focus {
+            opacity: 100%;
+        }
+    }
+
+    &__submit {
+        margin: 0 0 0 auto;
+        min-width: 140px;
+    }
+
+    &__contact-info {
+        position: relative;
+
+        &::before {
+            position: absolute;
+            transform: scale(.028);
+            display: block;
+            width: 10px;
+            height: 10px;
+        }
+
+        &--geotag {
+            &::before {
+                content: url('../images/marker.svg');
+                top: -10px;
+                left: -26px;
+            }
+        }
+
+        &--number {
+            &::before {
+                content: url('../images/phone.svg');
+                top: -9px;
+                left: -26px;
+            }
+        }
+
+        &--mail {
+            &::before {
+                content: url('../images/mail.svg');
+                top: -8px;
+                left: -26px;
+            }
+        }
+
+        &--hours {
+            &::before {
+                top: -10px;
+                left: -26px;
+                content: url('../images/clock.svg');
+            }
+        }
+
+    }
+
+    &__last-info {
+        width: 770px;
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        margin-top: 200px;
+    }
+
+    &__social-media {
+        display: flex;
+        flex-direction: row;
+    }
+
+    &__copyrights {
+        font-family: Gotham-book;
+        font-size: 14px;
+        color: white;
+        margin-top: 42px;
+    }
+}

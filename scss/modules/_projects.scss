@@ -29,10 +29,19 @@
         font-style: italic;
         text-align: left;
         color: #2c4058;
+    }
 
-        &::before {
-            content: '?? ';
-        }
+    &__icon-geotag{
+        transform: translateX();
+        top: -1px;
+        height: 20px;
+        max-width: 20px;
+        margin-right: 6px;
+    }
+
+    &__geo-info {
+        display: flex;
+        flex-direction: row;
     }
 
     &__wrapper {

@@ -1,7 +1,7 @@
 .news {
     width: 100%;
     height: 1030px;
-    background: linear-gradient(to top, #3c7fd4, #24ccfa);
+    background: url('../images/News-bacl.png') no-repeat center bottom, linear-gradient(to top, #3c7fd4, #24ccfa);
     overflow: hidden;
 
     &__wrapper {
@@ -14,6 +14,10 @@
     &__header {
         margin-bottom: 100px;
         color: #fff;
+
+        &::before {
+            background-color: #fff;
+        }
     }
 
     &__block {
